@@ -1,0 +1,2652 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sencedro</title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="fornocut icon" href="./assets/images/logo/seencedro.ico" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+
+</head>
+
+<body>
+
+
+  <div class="overlay" data-overlay></div>
+
+  <!--
+    - MODAL
+  -->
+
+  <div class="modal" data-modal>
+
+    <div class="modal-close-overlay" data-modal-overlay></div>
+
+    <div class="modal-content">
+
+      <button class="modal-close-btn" data-modal-close>
+        <ion-icon name="close-outline"></ion-icon>
+      </button>
+
+      <div class="Novosletter-img">
+        <img src="./assets/images/logo/seencedro.png" alt="subscribe Novosletter" width="400" height="400">
+      </div>
+
+      <div class="Novosletter">
+
+        <form action="#">
+
+          <div class="Novosletter-header">
+
+            <h3 class="Novosletter-title">Assine a nossa Novosletter.</h3>
+
+            <p class="Novosletter-desc">
+              Enviaremos informações sobre lançamentos de produtos, as últimas novidades e tudo sobre o universo
+              <b>Sencendro</b>.
+            </p>
+
+          </div>
+
+          <input type="name" name="name" class="email-field" placeholder="Nome" required>
+          <input type="email" name="email" class="email-field" placeholder="Endereço de Email" required>
+
+          <button type="submit" class="btn-Novosletter">Enviar</button>
+
+        </form>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <!--
+    - NOTIFICATION TOAST
+  -->
+
+  <div class="notification-toast" data-toast>
+
+    <button class="toast-close-btn" data-toast-close>
+      <ion-icon name="close-outline"></ion-icon>
+    </button>
+
+    <div class="toast-banner">
+      <img src="./assets/images/products/1.png" alt="Rose Gold Earrings" width="80" height="70">
+    </div>
+
+    <div class="toast-detail">
+
+      <p class="toast-message">
+        Adicionando recente
+      </p>
+
+      <p class="toast-title">
+        Amassadeira
+      </p>
+
+      <p class="toast-meta">
+        <time datetime="PT2M">2 Minutos</time> atras
+      </p>
+
+    </div>
+
+  </div>
+
+  <!--
+    - HEADER
+  -->
+
+  <header>
+
+    <div class="header-top">
+
+      <div class="container">
+
+        <ul class="header-social-container">
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+        <div class="header-alert-Novos">
+          <p class="flex">
+            <a class="a_email" style="padding-right: 10px;" href="tel:+244939343039">+244 939 343 039</a>
+            <a class="a_email" href="tel:+244993920505"> +244 993 920 505</a>
+          </p>
+        </div>
+
+        <div class="header-top-actions">
+          <a class="a_email" href="mailto:sencedro.service@outlook.com">sencedro.service@outlook.com</a>
+          <!-- <select name="currency">
+
+            <option value="usd">USD &dollar;</option>
+            <option value="eur">EUR &euro;</option>
+
+          </select>
+
+          <select name="language">
+
+            <option value="en-US">English</option>
+            <option value="es-ES">Espa&ntilde;ol</option>
+            <option value="fr">Fran&ccedil;ais</option>
+
+          </select> -->
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="header-main">
+
+      <div class="container">
+
+        <a href="#" class="header-logo">
+          <img src="./assets/images/logo/sem.png" alt="Anon's logo" width="120" height="auto">
+        </a>
+
+        <div class="header-search-container">
+
+          <input type="search" name="search" class="search-field" placeholder="Buscar Produto">
+
+          <button class="search-btn">
+            <ion-icon name="search-outline"></ion-icon>
+          </button>
+
+        </div>
+
+        <div class="header-user-actions">
+
+          <button class="action-btn">
+            <ion-icon name="person-outline"></ion-icon>
+          </button>
+
+          <button class="action-btn">
+            <ion-icon name="heart-outline"></ion-icon>
+            <span class="count">0</span>
+          </button>
+
+          <button class="action-btn">
+            <ion-icon name="bag-handle-outline"></ion-icon>
+            <span class="count">0</span>
+          </button>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <nav class="desktop-navigation-menu">
+
+      <div class="container">
+
+        <ul class="desktop-menu-category-list">
+
+          <li class="menu-category">
+            <a href="#" class="menu-title">Home</a>
+          </li>
+
+          <li class="menu-category">
+            <a href="#" class="menu-title">Escolha o seu kit</a>
+
+            <div class="dropdown-panel">
+
+              <ul class="dropdown-panel-list">
+
+                <li class="menu-title">
+                  <a href="#">Kit de paniicação e pastelaria</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Kit de geladeira</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Kit de Picolé & Gelo</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Kit para Estampagem & Serigrafia e Gráficas</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Kit Para Produção de Sacolas</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Kit para a produção de Chinelos</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">
+                    <img src="./assets/images/Banner.png" alt="headphone collection" width="250"
+                      height="119">
+                  </a>
+                </li>
+
+              </ul>
+
+              <ul class="dropdown-panel-list">
+
+                <li class="menu-title">
+                  <a href="#">Estampagem</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Formal</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Formas</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Canudos</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Maquina</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Sunglasses</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">
+                    <img src="./assets/images/Banner.png" alt="men's fashion" width="250" height="119">
+                  </a>
+                </li>
+
+              </ul>
+
+              <ul class="dropdown-panel-list">
+
+                <li class="menu-title">
+                  <a href="#">Chinelas</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Formal</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Formas</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Forno</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Sacola</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Estampagem</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">
+                    <img src="./assets/images/Banner.png" alt="women's fashion" width="250" height="119">
+                  </a>
+                </li>
+
+              </ul>
+
+              <ul class="dropdown-panel-list">
+
+                <li class="menu-title">
+                  <a href="#">Panificação</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Geladeira</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Batideira</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Cortadeira</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Forno</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Forma</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">
+                    <img src="./assets/images/Banner.png" alt="mouse collection" width="250" height="119">
+                  </a>
+                </li>
+
+              </ul>
+
+            </div>
+          </li>
+
+          <li class="menu-category">
+            <a href="#" class="menu-title">Produtos</a>
+
+            <ul class="dropdown-list">
+
+              <li class="dropdown-item">
+                <a href="#">Panificação</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="#">Geladaria</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="#">Sacolas</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="#">Picolé</a>
+              </li>
+              <li class="dropdown-item">
+                <a href="#">Equipamentos para produção de Chinelos</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="#">Lavandaria industrial</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="#">Serpentinas</a>
+              </li>
+
+            </ul>
+          </li>
+
+          <li class="menu-category">
+            <a href="#" class="menu-title">Matérias Primas</a>
+
+            <ul class="dropdown-list">
+
+              <li class="dropdown-item">
+                <a href="#">Produção de chinelos</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="#">Produção de sacolas</a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="menu-category">
+            <a href="#" class="menu-title">Sobre</a>
+          </li>
+
+          <li class="menu-category">
+            <a href="#" class="menu-title">Downloads</a>
+          </li>
+
+          <li class="menu-category">
+            <a href="#" class="menu-title">Reclamações</a>
+          </li>
+
+          <li class="menu-category">
+            <a href="#" class="menu-title">Assistência técnica</a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </nav>
+
+    <div class="mobile-bottom-navigation">
+
+      <button class="action-btn" data-mobile-menu-open-btn>
+        <ion-icon name="menu-outline"></ion-icon>
+      </button>
+
+      <button class="action-btn">
+        <ion-icon name="bag-handle-outline"></ion-icon>
+
+        <span class="count">0</span>
+      </button>
+
+      <button class="action-btn">
+        <ion-icon name="home-outline"></ion-icon>
+      </button>
+
+      <button class="action-btn">
+        <ion-icon name="heart-outline"></ion-icon>
+
+        <span class="count">0</span>
+      </button>
+
+      <button class="action-btn" data-mobile-menu-open-btn>
+        <ion-icon name="grid-outline"></ion-icon>
+      </button>
+
+    </div>
+
+    <nav class="mobile-navigation-menu  has-scrollbar" data-mobile-menu>
+
+      <div class="menu-top">
+        <h2 class="menu-title">Menu</h2>
+
+        <button class="menu-close-btn" data-mobile-menu-close-btn>
+          <ion-icon name="close-outline"></ion-icon>
+        </button>
+      </div>
+
+      <ul class="mobile-menu-category-list">
+
+        <li class="menu-category">
+          <a href="#" class="menu-title">Home</a>
+        </li>
+
+        <li class="menu-category">
+
+          <button class="accordion-menu" data-accordion-btn>
+            <p class="menu-title">Men's</p>
+
+            <div>
+              <ion-icon name="add-outline" class="add-icon"></ion-icon>
+              <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+            </div>
+          </button>
+
+          <ul class="submenu-category-list" data-accordion>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">amassadeira</a>
+            </li>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">fornos & Jeans</a>
+            </li>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Safety Shoes</a>
+            </li>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Wallet</a>
+            </li>
+
+          </ul>
+
+        </li>
+
+        <li class="menu-category">
+
+          <button class="accordion-menu" data-accordion-btn>
+            <p class="menu-title">Women's</p>
+
+            <div>
+              <ion-icon name="add-outline" class="add-icon"></ion-icon>
+              <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+            </div>
+          </button>
+
+          <ul class="submenu-category-list" data-accordion>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Dress & Frock</a>
+            </li>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Earrings</a>
+            </li>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Necklace</a>
+            </li>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Makeup Kit</a>
+            </li>
+
+          </ul>
+
+        </li>
+
+        <li class="menu-category">
+
+          <button class="accordion-menu" data-accordion-btn>
+            <p class="menu-title">Jewelry</p>
+
+            <div>
+              <ion-icon name="add-outline" class="add-icon"></ion-icon>
+              <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+            </div>
+          </button>
+
+          <ul class="submenu-category-list" data-accordion>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Earrings</a>
+            </li>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Couple Rings</a>
+            </li>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Necklace</a>
+            </li>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Bracelets</a>
+            </li>
+
+          </ul>
+
+        </li>
+
+        <li class="menu-category">
+
+          <button class="accordion-menu" data-accordion-btn>
+            <p class="menu-title">Perfume</p>
+
+            <div>
+              <ion-icon name="add-outline" class="add-icon"></ion-icon>
+              <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+            </div>
+          </button>
+
+          <ul class="submenu-category-list" data-accordion>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Clothes Perfume</a>
+            </li>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Deodorant</a>
+            </li>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Flower Fragrance</a>
+            </li>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Air Freshener</a>
+            </li>
+
+          </ul>
+
+        </li>
+
+        <li class="menu-category">
+          <a href="#" class="menu-title">Blog</a>
+        </li>
+
+        <li class="menu-category">
+          <a href="#" class="menu-title">Hot Offers</a>
+        </li>
+
+      </ul>
+
+      <div class="menu-bottom">
+
+        <ul class="menu-category-list">
+
+          <li class="menu-category">
+
+            <button class="accordion-menu" data-accordion-btn>
+              <p class="menu-title">Language</p>
+
+              <ion-icon name="caret-back-outline" class="caret-back"></ion-icon>
+            </button>
+
+            <ul class="submenu-category-list" data-accordion>
+
+              <li class="submenu-category">
+                <a href="#" class="submenu-title">English</a>
+              </li>
+
+              <li class="submenu-category">
+                <a href="#" class="submenu-title">Espa&ntilde;ol</a>
+              </li>
+
+              <li class="submenu-category">
+                <a href="#" class="submenu-title">Fren&ccedil;h</a>
+              </li>
+
+            </ul>
+
+          </li>
+
+          <li class="menu-category">
+            <button class="accordion-menu" data-accordion-btn>
+              <p class="menu-title">Currency</p>
+              <ion-icon name="caret-back-outline" class="caret-back"></ion-icon>
+            </button>
+
+            <ul class="submenu-category-list" data-accordion>
+              <li class="submenu-category">
+                <a href="#" class="submenu-title">USD &dollar;</a>
+              </li>
+
+              <li class="submenu-category">
+                <a href="#" class="submenu-title">EUR &euro;</a>
+              </li>
+            </ul>
+          </li>
+
+        </ul>
+
+        <ul class="menu-social-container">
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </nav>
+
+  </header>
+
+  <!--
+    - MAIN
+  -->
+
+  <main>
+
+    <!--
+      - BANNER
+    -->
+
+    <div class="banner">
+
+      <div class="container">
+
+        <div class="slider-container has-scrollbar">
+
+          <div class="slider-item">
+
+            <img src="./assets/images/Banner.png" alt="women's latest fashion sale" class="banner-img">
+
+            <div class="banner-content">
+                  <p class="banner-subtitle">Temos para si</p>
+
+                  <h2 class="banner-title">Kit de panificação e pastelaria</h2>
+
+                  <p class="banner-text">
+                    aparti de <b>2000Kz</b>
+                  </p>
+
+                  <a href="#" class="banner-btn">Saber mais</a>
+
+            </div>
+
+          </div>
+
+          <div class="slider-item">
+
+            <img src="./assets/images/Banner.png" alt="women's latest fashion sale" class="banner-img">
+
+            <div class="banner-content">
+                  <p class="banner-subtitle">Temos para si</p>
+
+                  <h2 class="banner-title">Kit de panificação e pastelaria</h2>
+
+                  <p class="banner-text">
+                    aparti de <b>2000Kz</b>
+                  </p>
+
+                  <a href="#" class="banner-btn">Saber mais</a>
+
+            </div>
+
+          </div>
+
+          <div class="slider-item">
+
+            <img src="./assets/images/Banner.png" alt="women's latest fashion sale" class="banner-img">
+
+            <div class="banner-content">
+                  <p class="banner-subtitle">Temos para si</p>
+
+                  <h2 class="banner-title">Kit de panificação e pastelaria</h2>
+
+                  <p class="banner-text">
+                    aparti de <b>2000Kz</b>
+                  </p>
+
+                  <a href="#" class="banner-btn">Saber mais</a>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+
+
+
+    <!--
+      - CATEGORY
+    -->
+
+    <div class="category">
+
+      <div class="container">
+
+        <div class="category-item-container has-scrollbar">
+
+          <div class="category-item">
+
+            <div class="category-img-box">
+              <img src="./assets/images/icons/pão.png" alt="panificação" width="30">
+            </div>
+
+            <div class="category-content-box">
+
+              <div class="category-content-flex">
+                <h3 class="category-item-title">Panificação</h3>
+
+                <!-- <p class="category-item-amount">(53)</p> -->
+              </div>
+
+              <a href="#" class="category-btn">Ver mais</a>
+
+            </div>
+
+          </div>
+
+          <div class="category-item">
+
+            <div class="category-img-box">
+              <img src="./assets/images/icons/estampagem.png" alt="Estampagem" width="30">
+            </div>
+
+            <div class="category-content-box">
+
+              <div class="category-content-flex">
+                <h3 class="category-item-title">Estampagem</h3>
+
+                <!-- <p class="category-item-amount">(58)</p> -->
+              </div>
+
+              <a href="#" class="category-btn">Ver mais</a>
+
+            </div>
+
+          </div>
+
+          <div class="category-item">
+
+            <div class="category-img-box">
+              <img src="./assets/images/icons/chinelos.png" alt="Produção de chinelos" width="30">
+            </div>
+
+            <div class="category-content-box">
+
+              <div class="category-content-flex">
+                <h3 class="category-item-title">Produção de chinelos</h3>
+
+                <!-- <p class="category-item-amount">(68)</p> -->
+              </div>
+
+              <a href="#" class="category-btn">Ver mais</a>
+
+            </div>
+
+          </div>
+
+          <div class="category-item">
+
+            <div class="category-img-box">
+              <img src="./assets/images/icons/sacola.png" alt="Produção de Sacolas" width="30">
+            </div>
+
+            <div class="category-content-box">
+
+              <div class="category-content-flex">
+                <h3 class="category-item-title">Produção de Sacolas</h3>
+
+                <!-- <p class="category-item-amount">(84)</p> -->
+              </div>
+
+              <a href="#" class="category-btn">Ver mais</a>
+
+            </div>
+
+          </div>
+
+          <div class="category-item">
+
+            <div class="category-img-box">
+              <img src="./assets/images/icons/geladaria.png" alt="Geladaria" width="30">
+            </div>
+
+            <div class="category-content-box">
+
+              <div class="category-content-flex">
+                <h3 class="category-item-title">Geladaria</h3>
+
+                <!-- <p class="category-item-amount">(35)</p> -->
+              </div>
+
+              <a href="#" class="category-btn">Ver mais</a>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <!--
+      - PRODUCT
+    -->
+
+    <div class="product-container">
+
+      <div class="container">
+
+        <!--
+          - SIDEBAR
+        -->
+
+        <div class="sidebar  has-scrollbar" data-mobile-menu>
+
+          <div class="sidebar-category">
+
+            <div class="sidebar-top">
+              <h2 class="sidebar-title">Category</h2>
+
+              <button class="sidebar-close-btn" data-mobile-menu-close-btn>
+                <ion-icon name="close-outline"></ion-icon>
+              </button>
+            </div>
+
+            <ul class="sidebar-menu-category-list">
+
+              <li class="sidebar-menu-category">
+
+                <button class="sidebar-accordion-menu" data-accordion-btn>
+
+                  <div class="menu-title-flex">
+                    <img src="./assets/images/icons/pão.png" alt="pão" width="20" height="20"
+                      class="menu-title-img">
+
+                    <p class="menu-title">Panificação</p>
+                  </div>
+
+                  <div>
+                    <ion-icon name="add-outline" class="add-icon"></ion-icon>
+                    <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+                  </div>
+
+                </button>
+
+                <ul class="sidebar-submenu-category-list" data-accordion>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Forno Turbo</p>
+                      <!-- <data value="300" class="stock" title="Available Stock">300</data> -->
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Forno Turbo Eléctrico</p>
+                      <!-- <data value="60" class="stock" title="Available Stock">60</data> -->
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Modelador de Pães</p>
+                      <!-- <data value="50" class="stock" title="Available Stock">50</data> -->
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Amassadeira Espiral 42kg Massa</p>
+                      <!-- <data value="87" class="stock" title="Available Stock">87</data> -->
+                    </a>
+                  </li>
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Tabuleiros para Pão Frances</p>
+                      <!-- <data value="87" class="stock" title="Available Stock">87</data> -->
+                    </a>
+                  </li>
+
+                </ul>
+
+              </li>
+
+              <li class="sidebar-menu-category">
+
+                <button class="sidebar-accordion-menu" data-accordion-btn>
+
+                  <div class="menu-title-flex">
+                    <img src="./assets/images/icons/estampagem.png" alt="footwear" class="menu-title-img" width="20"
+                      height="20">
+
+                    <p class="menu-title">Estampagem</p>
+                  </div>
+
+                  <div>
+                    <ion-icon name="add-outline" class="add-icon"></ion-icon>
+                    <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+                  </div>
+
+                </button>
+
+                <ul class="sidebar-submenu-category-list" data-accordion>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Forno Turbo</p>
+                      <!-- <data value="300" class="stock" title="Available Stock">300</data> -->
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Forno Turbo Eléctrico</p>
+                      <!-- <data value="60" class="stock" title="Available Stock">60</data> -->
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Modelador de Pães</p>
+                      <!-- <data value="50" class="stock" title="Available Stock">50</data> -->
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Amassadeira Espiral 42kg Massa</p>
+                      <!-- <data value="87" class="stock" title="Available Stock">87</data> -->
+                    </a>
+                  </li>
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Tabuleiros para Pão Frances</p>
+                      <!-- <data value="87" class="stock" title="Available Stock">87</data> -->
+                    </a>
+                  </li>
+
+                </ul>
+
+              </li>
+
+              <li class="sidebar-menu-category">
+
+                <button class="sidebar-accordion-menu" data-accordion-btn>
+
+                  <div class="menu-title-flex">
+                    <img src="./assets/images/icons/chinelos.png" alt="clothes" class="menu-title-img" width="20"
+                      height="20">
+
+                    <p class="menu-title">
+                      Produção de chinelos</p>
+                  </div>
+
+                  <div>
+                    <ion-icon name="add-outline" class="add-icon"></ion-icon>
+                    <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+                  </div>
+
+                </button>
+
+                <ul class="sidebar-submenu-category-list" data-accordion>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Forno Turbo</p>
+                      <!-- <data value="300" class="stock" title="Available Stock">300</data> -->
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Forno Turbo Eléctrico</p>
+                      <!-- <data value="60" class="stock" title="Available Stock">60</data> -->
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Modelador de Pães</p>
+                      <!-- <data value="50" class="stock" title="Available Stock">50</data> -->
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Amassadeira Espiral 42kg Massa</p>
+                      <!-- <data value="87" class="stock" title="Available Stock">87</data> -->
+                    </a>
+                  </li>
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Tabuleiros para Pão Frances</p>
+                      <!-- <data value="87" class="stock" title="Available Stock">87</data> -->
+                    </a>
+                  </li>
+
+                </ul>
+
+              </li>
+
+              <li class="sidebar-menu-category">
+
+                <button class="sidebar-accordion-menu" data-accordion-btn>
+
+                  <div class="menu-title-flex">
+                    <img src="./assets/images/icons/sacola.png" alt="perfume" class="menu-title-img" width="20"
+                      height="20">
+
+                    <p class="menu-title">Produção de Sacolas</p>
+                  </div>
+
+                  <div>
+                    <ion-icon name="add-outline" class="add-icon"></ion-icon>
+                    <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+                  </div>
+
+                </button>
+
+                <ul class="sidebar-submenu-category-list" data-accordion>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Forno Turbo</p>
+                      <!-- <data value="300" class="stock" title="Available Stock">300</data> -->
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Forno Turbo Eléctrico</p>
+                      <!-- <data value="60" class="stock" title="Available Stock">60</data> -->
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Modelador de Pães</p>
+                      <!-- <data value="50" class="stock" title="Available Stock">50</data> -->
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Amassadeira Espiral 42kg Massa</p>
+                      <!-- <data value="87" class="stock" title="Available Stock">87</data> -->
+                    </a>
+                  </li>
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Tabuleiros para Pão Frances</p>
+                      <!-- <data value="87" class="stock" title="Available Stock">87</data> -->
+                    </a>
+                  </li>
+
+                </ul>
+
+              </li>
+
+              <li class="sidebar-menu-category">
+
+                <button class="sidebar-accordion-menu" data-accordion-btn>
+
+                  <div class="menu-title-flex">
+                    <img src="./assets/images/icons/geladaria.png" alt="cosmetics" class="menu-title-img" width="20"
+                      height="20">
+
+                    <p class="menu-title">Geladaria</p>
+                  </div>
+
+                  <div>
+                    <ion-icon name="add-outline" class="add-icon"></ion-icon>
+                    <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+                  </div>
+
+                </button>
+
+                <ul class="sidebar-submenu-category-list" data-accordion>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Forno Turbo</p>
+                      <!-- <data value="300" class="stock" title="Available Stock">300</data> -->
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Forno Turbo Eléctrico</p>
+                      <!-- <data value="60" class="stock" title="Available Stock">60</data> -->
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Modelador de Pães</p>
+                      <!-- <data value="50" class="stock" title="Available Stock">50</data> -->
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Amassadeira Espiral 42kg Massa</p>
+                      <!-- <data value="87" class="stock" title="Available Stock">87</data> -->
+                    </a>
+                  </li>
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Tabuleiros para Pão Frances</p>
+                      <!-- <data value="87" class="stock" title="Available Stock">87</data> -->
+                    </a>
+                  </li>
+
+                </ul>
+
+              </li>
+
+            </ul>
+
+          </div>
+
+          <div class="product-showcase">
+
+            <h3 class="showcase-heading">Mais vendidos</h3>
+
+            <div class="showcase-wrapper">
+
+              <div class="showcase-container">
+
+                <div class="showcase">
+
+                  <a href="#" class="showcase-img-box">
+                    <img src="./assets/images/products/1.png" alt="baby fabric shoes" width="75" height="75"
+                      class="showcase-img">
+                  </a>
+
+                  <div class="showcase-content">
+
+                    <a href="#">
+                      <h4 class="showcase-title">Amassadeira</h4>
+                    </a>
+
+                    <div class="showcase-rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                    </div>
+
+                    <div class="price-box">
+                      <del>5.00Kz</del>
+                      <p class="price">4.00Kz</p>
+                    </div>
+
+                  </div>
+
+                </div>
+
+                <div class="showcase">
+
+                  <a href="#" class="showcase-img-box">
+                    <img src="./assets/images/products/6.png" alt="men's hoodies t-amassadeira" class="showcase-img"
+                      width="75" height="75">
+                  </a>
+
+                  <div class="showcase-content">
+
+                    <a href="#">
+                      <h4 class="showcase-title">men's hoodies t-amassadeira</h4>
+                    </a>
+                    <div class="showcase-rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star-half-outline"></ion-icon>
+                    </div>
+
+                    <div class="price-box">
+                      <del>Kz17.00</del>
+                      <p class="price">Kz7.00</p>
+                    </div>
+
+                  </div>
+
+                </div>
+
+                <div class="showcase">
+
+                  <a href="#" class="showcase-img-box">
+                    <img src="./assets/images/products/26.jpg" alt="girls t-amassadeira" class="showcase-img" width="75"
+                      height="75">
+                  </a>
+
+                  <div class="showcase-content">
+
+                    <a href="#">
+                      <h4 class="showcase-title">girls t-amassadeira</h4>
+                    </a>
+                    <div class="showcase-rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star-half-outline"></ion-icon>
+                    </div>
+
+                    <div class="price-box">
+                      <del>Kz5.00</del>
+                      <p class="price">Kz3.00</p>
+                    </div>
+
+                  </div>
+
+                </div>
+
+                <div class="showcase">
+
+                  <a href="#" class="showcase-img-box">
+                    <img src="./assets/images/products/39.jpg" alt="woolen hat for men" class="showcase-img" width="75"
+                      height="75">
+                  </a>
+
+                  <div class="showcase-content">
+
+                    <a href="#">
+                      <h4 class="showcase-title">woolen hat for men</h4>
+                    </a>
+                    <div class="showcase-rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                    </div>
+
+                    <div class="price-box">
+                      <del>Kz15.00</del>
+                      <p class="price">Kz12.00</p>
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="product-box">
+
+          <div class="flex">
+            <div class="cta-container">
+
+              <img src="./assets/images/ACE.PNG" alt="summer collection" class="cta-banner">
+  
+              <a href="#" class="cta-content">
+  
+                <p class="discount">Entregamos em toda parte de Angola</p>
+  
+              </a>
+  
+            </div>
+  
+            <div class="cta-container">
+  
+              <img src="./assets/images/logo/sem.png" alt="summer collection" class="cta-banner">
+  
+              <a href="#" class="cta-content">
+  
+                <p class="discount">Adquira um KIT e tenha a oportunidade <br> de 
+                  descontos incríveis na segunda compra</p>
+  
+              </a>
+  
+            </div>
+          </div>
+
+          <!--
+            - PRODUCT FEATURED
+          -->
+
+          <div class="product-featured" style="padding-top: 50px;">
+
+            <h2 class="title">RECOMENDAMOS PARA SI</h2>
+
+            <div class="showcase-wrapper has-scrollbar">
+
+              <div class="showcase-container">
+
+                <div class="showcase">
+
+                  <div class="showcase-banner">
+                    <img src="./assets/images/products/42.jpg" alt="shampoo, conditioner & facewash packs"
+                      class="showcase-img">
+                  </div>
+
+                  <div class="showcase-content">
+
+                    <div class="showcase-rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star-outline"></ion-icon>
+                      <ion-icon name="star-outline"></ion-icon>
+                    </div>
+
+                    <a href="#">
+                      <h3 class="showcase-title">Facas de corte</h3>
+                    </a>
+
+                    <p class="showcase-desc">
+                      Lorem ipsum dolor sit amet consectetur Lorem ipsum
+                      dolor dolor sit amet consectetur Lorem ipsum dolor
+                    </p>
+
+                    <div class="price-box">
+                      <p class="price">150.00Kz</p>
+
+                      <del>200.00Kz</del>
+                    </div>
+
+                    <button class="add-cart-btn">carrinho</button>
+
+                    <div class="showcase-status">
+                      <div class="wrapper">
+                        <p>
+                          Já vendidos: <b>20</b>
+                        </p>
+
+                        <p>
+                          Faltam: <b>40</b>
+                        </p>
+                      </div>
+
+                      <!-- <div class="showcase-status-bar"></div> -->
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+              <div class="showcase-container">
+
+                <div class="showcase">
+
+                  <div class="showcase-banner">
+                    <img src="./assets/images/products/5.png" alt="Rose Gold diamonds Earring" class="showcase-img">
+                  </div>
+
+                  <div class="showcase-content">
+
+                    <div class="showcase-rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star-outline"></ion-icon>
+                      <ion-icon name="star-outline"></ion-icon>
+                    </div>
+
+                    <h3 class="showcase-title">
+                      <a href="#" class="showcase-title">Rose Gold diamonds Earring</a>
+                    </h3>
+
+                    <p class="showcase-desc">
+                      Lorem ipsum dolor sit amet consectetur Lorem ipsum
+                      dolor dolor sit amet consectetur Lorem ipsum dolor
+                    </p>
+
+                    <div class="price-box">
+                      <p class="price">1990.00Kz</p>
+                      <del>2000.00Kz</del>
+                    </div>
+
+                    <button class="add-cart-btn">carrinho</button>
+
+                    <div class="showcase-status">
+                      <div class="wrapper">
+                        <p>
+                          Já vendidos: <b>20</b>
+                        </p>
+
+                        <p>
+                          Faltam: <b>40</b>
+                        </p>
+                      </div>
+
+                      <!-- <div class="showcase-status-bar"></div> -->
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+          <!--
+            - PRODUCT GRID
+          -->
+
+          <div class="product-main">
+
+            <h2 class="title">Novos Produtos</h2>
+
+            <div class="product-grid">
+
+              <div class="showcase">
+
+                <div class="showcase-banner">
+
+                  <img src="./assets/images/products/50.jpg" alt="Mens Winter Leathers Maquinas" width="300"
+                    class="product-img default">
+                  <img src="./assets/images/products/50.jpg" alt="Mens Winter Leathers Maquinas" width="300"
+                    class="product-img hover">
+
+                  <p class="showcase-badge">15%</p>
+
+                  <div class="showcase-actions">
+
+                    <button class="btn-action">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn-action">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn-action">
+                      <ion-icon name="repeat-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn-action">
+                      <ion-icon name="bag-add-outline"></ion-icon>
+                    </button>
+
+                  </div>
+
+                </div>
+
+                <div class="showcase-content">
+
+                  <a href="#" class="showcase-category">Maquina</a>
+
+                  <a href="#">
+                    <h3 class="showcase-title">Mens Winter Leathers Maquinas</h3>
+                  </a>
+
+                  <div class="showcase-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                  </div>
+
+                  <div class="price-box">
+                    <p class="price">48.00Kz</p>
+                    <del>75.00Kz</del>
+                  </div>
+
+                </div>
+
+              </div>
+
+              <div class="showcase">
+
+                <div class="showcase-banner">
+                  <img src="./assets/images/products/1.png" alt="Pure Garment Dyed Cotton amassadeira"
+                    class="product-img default" width="300">
+                  <img src="./assets/images/products/1.png" alt="Pure Garment Dyed Cotton amassadeira"
+                    class="product-img hover" width="300">
+
+                  <!-- <p class="showcase-badge angle black">sale</p> -->
+
+                  <div class="showcase-actions">
+                    <button class="btn-action">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn-action">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn-action">
+                      <ion-icon name="repeat-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn-action">
+                      <ion-icon name="bag-add-outline"></ion-icon>
+                    </button>
+                  </div>
+                </div>
+
+                <div class="showcase-content">
+                  <a href="#" class="showcase-category">amassadeira</a>
+
+                  <h3>
+                    <a href="#" class="showcase-title">Pure Garment Dyed Cotton amassadeira</a>
+                  </h3>
+
+                  <div class="showcase-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                  </div>
+
+                  <div class="price-box">
+                    <p class="price">Kz45.00</p>
+                    <del>Kz56.00</del>
+                  </div>
+
+                </div>
+
+              </div>
+
+              <div class="showcase">
+
+                <div class="showcase-banner">
+                  <img src="./assets/images/products/6.png" alt="MEN Yarn Fleece Full-Zip Maquina"
+                    class="product-img default" width="300">
+                  <img src="./assets/images/products/6.png" alt="MEN Yarn Fleece Full-Zip Maquina"
+                    class="product-img hover" width="300">
+
+                  <div class="showcase-actions">
+                    <button class="btn-action">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn-action">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn-action">
+                      <ion-icon name="repeat-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn-action">
+                      <ion-icon name="bag-add-outline"></ion-icon>
+                    </button>
+                  </div>
+                </div>
+
+                <div class="showcase-content">
+                  <a href="#" class="showcase-category">Maquina</a>
+
+                  <h3>
+                    <a href="#" class="showcase-title">MEN Yarn Fleece Full-Zip Maquina</a>
+                  </h3>
+
+                  <div class="showcase-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                  </div>
+
+                  <div class="price-box">
+                    <p class="price">Kz58.00</p>
+                    <del>Kz65.00</del>
+                  </div>
+
+                </div>
+
+              </div>
+
+              <div class="showcase">
+
+                <div class="showcase-banner">
+                  <img src="./assets/images/products/39.jpg" alt="Black Floral Wrap Midi batideira"
+                    class="product-img default" width="300">
+                  <img src="./assets/images/products/39.jpg" alt="Black Floral Wrap Midi batideira"
+                    class="product-img hover" width="300">
+
+                  <p class="showcase-badge angle pink">Novo</p>
+
+                  <div class="showcase-actions">
+                    <button class="btn-action">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn-action">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn-action">
+                      <ion-icon name="repeat-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn-action">
+                      <ion-icon name="bag-add-outline"></ion-icon>
+                    </button>
+                  </div>
+                </div>
+
+                <div class="showcase-content">
+                  <a href="#" class="showcase-category">batideira</a>
+
+                  <h3>
+                    <a href="#" class="showcase-title">Black Floral Wrap Midi batideira</a>
+                  </h3>
+
+                  <div class="showcase-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                  </div>
+
+                  <div class="price-box">
+                    <p class="price">Kz25.00</p>
+                    <del>Kz35.00</del>
+                  </div>
+
+                </div>
+
+              </div>
+
+              <div class="showcase">
+
+                <div class="showcase-banner">
+                  <img src="./assets/images/products/Forno de 16 tedesco npg.png" alt="Formas Men's Brown shoes"
+                    class="product-img default" width="300">
+                  <img src="./assets/images/products/Forno de 16 tedesco npg.png" alt="Formas Men's Brown shoes"
+                    class="product-img hover" width="300">
+
+                  <div class="showcase-actions">
+                    <button class="btn-action">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn-action">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn-action">
+                      <ion-icon name="repeat-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn-action">
+                      <ion-icon name="bag-add-outline"></ion-icon>
+                    </button>
+                  </div>
+                </div>
+
+                <div class="showcase-content">
+                  <a href="#" class="showcase-category">Formas</a>
+
+                  <h3>
+                    <a href="#" class="showcase-title">Formas Men's Brown shoes</a>
+                  </h3>
+
+                  <div class="showcase-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                  </div>
+
+                  <div class="price-box">
+                    <p class="price">Kz99.00</p>
+                    <del>Kz105.00</del>
+                  </div>
+
+                </div>
+
+              </div>
+
+              <div class="showcase">
+
+                <div class="showcase-banner">
+                  <img src="./assets/images/products/37.jpg" alt="Pocket Watch Leather Pouch"
+                    class="product-img default" width="300">
+                  <img src="./assets/images/products/37.jpg" alt="Pocket Watch Leather Pouch" class="product-img hover"
+                    width="300">
+
+                  <!-- <p class="showcase-badge angle black">sale</p> -->
+
+                  <div class="showcase-actions">
+                    <button class="btn-action">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn-action">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn-action">
+                      <ion-icon name="repeat-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn-action">
+                      <ion-icon name="bag-add-outline"></ion-icon>
+                    </button>
+                  </div>
+                </div>
+
+                <div class="showcase-content">
+                  <a href="#" class="showcase-category">watches</a>
+
+                  <h3>
+                    <a href="#" class="showcase-title">Pocket Watch Leather Pouch</a>
+                  </h3>
+
+                  <div class="showcase-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                  </div>
+
+                  <div class="price-box">
+                    <p class="price">Kz150.00</p>
+                    <del>Kz170.00</del>
+                  </div>
+
+                </div>
+
+              </div>
+
+              <div class="showcase">
+
+                <div class="showcase-banner">
+                  <img src="./assets/images/products/MODELADORA DE MASSA.jpg" alt="Smart watche Vital Plus"
+                    class="product-img default" width="300">
+                  <img src="./assets/images/products/MODELADORA DE MASSA.jpg" alt="Smart watche Vital Plus"
+                    class="product-img hover" width="300">
+
+                  <div class="showcase-actions">
+                    <button class="btn-action">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn-action">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn-action">
+                      <ion-icon name="repeat-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn-action">
+                      <ion-icon name="bag-add-outline"></ion-icon>
+                    </button>
+                  </div>
+                </div>
+
+                <div class="showcase-content">
+                  <a href="#" class="showcase-category">watches</a>
+
+                  <h3>
+                    <a href="#" class="showcase-title">Smart watche Vital Plus</a>
+                  </h3>
+
+                  <div class="showcase-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                  </div>
+
+                  <div class="price-box">
+                    <p class="price">Kz100.00</p>
+                    <del>Kz120.00</del>
+                  </div>
+
+                </div>
+
+              </div>
+
+              <div class="showcase">
+
+                <div class="showcase-banner">
+                  <img src="./assets/images/products/PREPARADOR-E-AMACIADOR-DE-CARNES-PAC.jpg"
+                    alt="Womens Party Wear Shoes" class="product-img default" width="300">
+                  <img src="./assets/images/products/PREPARADOR-E-AMACIADOR-DE-CARNES-PAC.jpg"
+                    alt="Womens Party Wear Shoes" class="product-img hover" width="300">
+
+                  <!-- <p class="showcase-badge angle black">sale</p> -->
+
+                  <div class="showcase-actions">
+                    <button class="btn-action">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn-action">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn-action">
+                      <ion-icon name="repeat-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn-action">
+                      <ion-icon name="bag-add-outline"></ion-icon>
+                    </button>
+                  </div>
+                </div>
+
+                <div class="showcase-content">
+                  <a href="#" class="showcase-category">party wear</a>
+
+                  <h3>
+                    <a href="#" class="showcase-title">Womens Party Wear Shoes</a>
+                  </h3>
+
+                  <div class="showcase-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                  </div>
+
+                  <div class="price-box">
+                    <p class="price">Kz25.00</p>
+                    <del>Kz30.00</del>
+                  </div>
+
+                </div>
+
+              </div>
+
+              <div class="showcase">
+
+                <div class="showcase-banner">
+                  <img src="./assets/images/products/21.jpg" alt="Mens Winter Leathers Maquinas"
+                    class="product-img default" width="300">
+                  <img src="./assets/images/products/21.jpg" alt="Mens Winter Leathers Maquinas"
+                    class="product-img hover" width="300">
+
+                  <div class="showcase-actions">
+                    <button class="btn-action">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn-action">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn-action">
+                      <ion-icon name="repeat-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn-action">
+                      <ion-icon name="bag-add-outline"></ion-icon>
+                    </button>
+                  </div>
+                </div>
+
+                <div class="showcase-content">
+                  <a href="#" class="showcase-category">Maquina</a>
+
+                  <h3>
+                    <a href="#" class="showcase-title">Mens Winter Leathers Maquinas</a>
+                  </h3>
+
+                  <div class="showcase-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                  </div>
+
+                  <div class="price-box">
+                    <p class="price">Kz32.00</p>
+                    <del>Kz45.00</del>
+                  </div>
+
+                </div>
+
+              </div>
+
+              <div class="showcase">
+
+                <div class="showcase-banner">
+                  <img src="./assets/images/products/22.jpg" alt="Trekking & Running Shoes - black"
+                    class="product-img default" width="300">
+                  <img src="./assets/images/products/22.jpg" alt="Trekking & Running Shoes - black"
+                    class="product-img hover" width="300">
+
+                  <!-- <p class="showcase-badge angle black">sale</p> -->
+
+                  <div class="showcase-actions">
+                    <button class="btn-action">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn-action">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn-action">
+                      <ion-icon name="repeat-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn-action">
+                      <ion-icon name="bag-add-outline"></ion-icon>
+                    </button>
+                  </div>
+                </div>
+
+                <div class="showcase-content">
+                  <a href="#" class="showcase-category">Canudos</a>
+
+                  <h3>
+                    <a href="#" class="showcase-title">Trekking & Running Shoes - black</a>
+                  </h3>
+
+                  <div class="showcase-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                  </div>
+
+                  <div class="price-box">
+                    <p class="price">Kz58.00</p>
+                    <del>Kz64.00</del>
+                  </div>
+
+                </div>
+
+              </div>
+
+              <div class="showcase">
+
+                <div class="showcase-banner">
+                  <img src="./assets/images/products/25.jpg" alt="Men's Leather Formal Wear shoes"
+                    class="product-img default" width="300">
+                  <img src="./assets/images/products/25.jpg" alt="Men's Leather Formal Wear shoes"
+                    class="product-img hover" width="300">
+
+                  <div class="showcase-actions">
+                    <button class="btn-action">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn-action">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn-action">
+                      <ion-icon name="repeat-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn-action">
+                      <ion-icon name="bag-add-outline"></ion-icon>
+                    </button>
+                  </div>
+                </div>
+
+                <div class="showcase-content">
+                  <a href="#" class="showcase-category">formal</a>
+
+                  <h3>
+                    <a href="#" class="showcase-title">Men's Leather Formal Wear shoes</a>
+                  </h3>
+
+                  <div class="showcase-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                  </div>
+
+                  <div class="price-box">
+                    <p class="price">Kz50.00</p>
+                    <del>Kz65.00</del>
+                  </div>
+
+                </div>
+
+              </div>
+
+              <div class="showcase">
+
+                <div class="showcase-banner">
+                  <img src="./assets/images/products/FORNO DE 10 TABULEIROS.png"
+                    alt="Better Basics French Terry Sweatfornos" class="product-img default" width="300">
+                  <img src="./assets/images/products/FORNO DE 10 TABULEIROS.png"
+                    alt="Better Basics French Terry Sweatfornos" class="product-img hover" width="300">
+
+                  <!-- <p class="showcase-badge angle black">sale</p> -->
+
+                  <div class="showcase-actions">
+                    <button class="btn-action">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn-action">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn-action">
+                      <ion-icon name="repeat-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn-action">
+                      <ion-icon name="bag-add-outline"></ion-icon>
+                    </button>
+                  </div>
+                </div>
+
+                <div class="showcase-content">
+                  <a href="#" class="showcase-category">fornos</a>
+
+                  <h3>
+                    <a href="#" class="showcase-title">Better Basics French Terry Sweatfornos</a>
+                  </h3>
+
+                  <div class="showcase-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                  </div>
+
+                  <div class="price-box">
+                    <p class="price">Kz78.00</p>
+                    <del>Kz85.00</del>
+                  </div>
+
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <!--
+      - TESTIMONIALS, CTA & SERVICE
+    -->
+
+    <div>
+
+      <div class="container">
+
+        <div class="testimonials-box">
+
+          <!--
+            - TESTIMONIALS
+          -->
+
+          <div class="testimonial">
+
+            <h2 class="title">Testemunho</h2>
+
+            <div class="testimonial-card">
+
+              <img src="./assets/images/testimonial-1.jpg" style="object-fit: cover;" alt="alan doe" class="testimonial-banner" width="80"
+                height="80">
+
+              <p class="testimonial-name">HS</p>
+
+              <p class="testimonial-title">CEO da uniTuenda</p>
+
+              <img src="./assets/images/icons/quotes.svg"  alt="quotation" class="quotation-img" width="26">
+
+              <p class="testimonial-desc">
+                Lorem ipsum dolor sit amet consectetur Lorem ipsum
+                dolor dolor sit amet.
+              </p>
+
+            </div>
+
+          </div>
+
+          <!--
+            - CTA
+          -->
+
+          <div class="cta-container">
+
+            <div class="product-featured" >
+
+              <h2 class="title">Casos de sucesso</h2>
+  
+              <div class="showcase-wrapper has-scrollbar">
+  
+                <div class="showcase-container">
+
+                    <img src="./assets/images/products/Imagem1.jpg" alt="summer collection" class="cta-banner">
+        
+                    <!-- <a href="#" class="cta-content">
+        
+                      <p class="discount">Entregamos em toda parte de Angola</p>
+        
+                    </a> -->
+  
+                </div>
+  
+                <div class="showcase-container">
+
+                    <img src="./assets/images/products/Imagem1.jpg" alt="summer collection" class="cta-banner">
+        
+                    <!-- <a href="#" class="cta-content">
+        
+                      <p class="discount">Entregamos em toda parte de Angola</p>
+        
+                    </a> -->
+  
+                </div>
+  
+              </div>
+  
+            </div>
+
+          </div>
+
+          <!--
+            - SERVICE
+          -->
+
+          <!-- <div class="service">
+
+            <h2 class="title">Our Services</h2>
+
+            <div class="service-container">
+
+              <a href="#" class="service-item">
+
+                <div class="service-icon">
+                  <ion-icon name="boat-outline"></ion-icon>
+                </div>
+
+                <div class="service-content">
+
+                  <h3 class="service-title">Entrega em Angola</h3>
+                  <p class="service-desc">For Order Over Kz100</p>
+
+                </div>
+
+              </a>
+
+              <a href="#" class="service-item">
+
+                <div class="service-icon">
+                  <ion-icon name="rocket-outline"></ion-icon>
+                </div>
+
+                <div class="service-content">
+
+                  <h3 class="service-title">Next Day delivery</h3>
+                  <p class="service-desc">UK Orders Only</p>
+
+                </div>
+
+              </a>
+
+              <a href="#" class="service-item">
+
+                <div class="service-icon">
+                  <ion-icon name="call-outline"></ion-icon>
+                </div>
+
+                <div class="service-content">
+
+                  <h3 class="service-title">Best Online Support</h3>
+                  <p class="service-desc">Hours: 8AM - 11PM</p>
+
+                </div>
+
+              </a>
+
+              <a href="#" class="service-item">
+
+                <div class="service-icon">
+                  <ion-icon name="arrow-undo-outline"></ion-icon>
+                </div>
+
+                <div class="service-content">
+
+                  <h3 class="service-title">Return Policy</h3>
+                  <p class="service-desc">Easy & Free Return</p>
+
+                </div>
+
+              </a>
+
+              <a href="#" class="service-item">
+
+                <div class="service-icon">
+                  <ion-icon name="ticket-outline"></ion-icon>
+                </div>
+
+                <div class="service-content">
+
+                  <h3 class="service-title">30% money back</h3>
+                  <p class="service-desc">For Order Over Kz100</p>
+
+                </div>
+
+              </a>
+
+            </div>
+
+          </div> -->
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <!--
+      - BLOG
+    -->
+
+    <div class="blog">
+
+      <div class="container">
+
+        <div class="blog-container has-scrollbar">
+
+          <div class="blog-card">
+
+            <a href="#">
+              <img src="./assets/images/partner/forn1.png" alt="Curbside fashion Trends: How to Win the Pickup Battle."
+                class="blog-banner" width="100" height="80px" style="object-fit: contain;">
+            </a>
+
+          </div>
+
+          <div class="blog-card">
+
+            <a href="#">
+              <img src="./assets/images/partner/forn2.png" alt="Curbside fashion Trends: How to Win the Pickup Battle."
+                class="blog-banner"width="100" height="80px" style="object-fit: contain;">
+            </a>
+
+          </div>
+
+          <div class="blog-card">
+
+            <a href="#">
+              <img src="./assets/images/partner/forn3.jpg" alt="Curbside fashion Trends: How to Win the Pickup Battle."
+                class="blog-banner"width="100" height="80px" style="object-fit: contain;">
+            </a>
+
+          </div>
+
+          <div class="blog-card">
+
+            <a href="#">
+              <img src="./assets/images/partner/forn4.jpg" alt="Curbside fashion Trends: How to Win the Pickup Battle."
+                class="blog-banner" width="100" height="80px" style="object-fit: contain;">
+            </a>
+
+          </div>
+          <div class="blog-card">
+
+            <a href="#">
+              <img src="./assets/images/partner/forn5.png" alt="Curbside fashion Trends: How to Win the Pickup Battle."
+                class="blog-banner" width="100" height="80px" style="object-fit: contain;">
+            </a>
+
+          </div>
+
+          <div class="blog-card">
+
+            <a href="#">
+              <img src="./assets/images/partner/forn6.png" alt="Curbside fashion Trends: How to Win the Pickup Battle."
+                class="blog-banner" width="100" height="80px" style="object-fit: contain;">
+            </a>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </main>
+
+  <!--
+    - FOOTER
+  -->
+
+  <footer>
+
+    <div class="footer-nav">
+
+      <div class="container">
+
+        <ul class="footer-nav-list">
+
+          <li class="footer-nav-item">
+            <h2 class="nav-title">Categorias</h2>
+          </li>
+
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">PANIFICAÇÃO</a>
+          </li>
+
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">ESTAMPAGEM</a>
+          </li>
+
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">PRODUÇÃO DE CHINELOS</a>
+          </li>
+
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">PRODUÇÃO DE SACOLAS</a>
+          </li>
+
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">
+              GELADARIA</a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-nav-list">
+
+          <li class="footer-nav-item">
+            <h2 class="nav-title">Products</h2>
+          </li>
+
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Prices drop</a>
+          </li>
+
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Novo products</a>
+          </li>
+
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Best sales</a>
+          </li>
+
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Contact us</a>
+          </li>
+
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Sitemap</a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-nav-list">
+
+          <li class="footer-nav-item">
+            <h2 class="nav-title">Our Company</h2>
+          </li>
+
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Delivery</a>
+          </li>
+
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Legal Notice</a>
+          </li>
+
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Terms and conditions</a>
+          </li>
+
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">About us</a>
+          </li>
+
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Secure payment</a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-nav-list">
+
+          <li class="footer-nav-item">
+            <h2 class="nav-title">Services</h2>
+          </li>
+
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Prices drop</a>
+          </li>
+
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Novos productos</a>
+          </li>
+
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Mais vendidos</a>
+          </li>
+
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Contactos</a>
+          </li>
+
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Sitemap</a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-nav-list">
+
+          <li class="footer-nav-item">
+            <h2 class="nav-title">Contacto</h2>
+          </li>
+
+          <li class="footer-nav-item flex">
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <address class="content">
+              Rua da missão Morro Bento 2 ao lado da UNIA
+            </address>
+          </li>
+
+          <li class="footer-nav-item flex">
+            <div class="icon-box">
+              <ion-icon name="call-outline"></ion-icon>
+            </div>
+
+            <a href="tel:+244939343039" class="footer-nav-link">939343039</a>
+          </li>
+
+          <li class="footer-nav-item flex">
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <a href="mailto:example@gmail.com" class="footer-nav-link">geral@sencedrocomercial.com</a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-nav-list">
+
+          <li class="footer-nav-item">
+            <h2 class="nav-title">Follow Us</h2>
+          </li>
+
+          <li>
+            <ul class="social-link">
+
+              <li class="footer-nav-item">
+                <a href="#" class="footer-nav-link">
+                  <ion-icon name="logo-facebook"></ion-icon>
+                </a>
+              </li>
+
+              <li class="footer-nav-item">
+                <a href="#" class="footer-nav-link">
+                  <ion-icon name="logo-twitter"></ion-icon>
+                </a>
+              </li>
+
+              <li class="footer-nav-item">
+                <a href="#" class="footer-nav-link">
+                  <ion-icon name="logo-linkedin"></ion-icon>
+                </a>
+              </li>
+
+              <li class="footer-nav-item">
+                <a href="#" class="footer-nav-link">
+                  <ion-icon name="logo-instagram"></ion-icon>
+                </a>
+              </li>
+
+            </ul>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+
+      <div class="container">
+
+        <p class="copyright">
+          Copyright &copy; <a href="#">Sencedro</a> all rights reserved.
+        </p>
+
+      </div>
+
+    </div>
+
+  </footer>
+
+
+
+
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
